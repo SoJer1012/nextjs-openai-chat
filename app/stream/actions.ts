@@ -11,7 +11,7 @@ export interface IMessage {
 
 const openai = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  baseURL: "http://13.59.183.171:31173/v1",
+  baseURL: "",
 });
 
 export async function continueConversation(history: IMessage[]) {
